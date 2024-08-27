@@ -1,0 +1,741 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --h-pr-color: rgb(57, 106, 255);
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* HABIBA SECTION 3 */
+.habiba-section3 {
+    background-image: url('habibaAssets/Ellipse 12.png');
+    background-repeat: no-repeat;
+    background-position: 100% 150%;
+    overflow: hidden;
+}
+
+.habiba-part1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-image: url(habibaAssets/Vector.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.habiba-iphone1 {
+    position: absolute;
+    left: 0;
+    margin: 50px;
+}
+
+.habiba-iphone2 {
+    position: absolute;
+    right: 0;
+    margin: 50px;
+}
+
+.habiba-iphone img {
+    height: 55rem;
+}
+
+.habiba-circles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    margin: 3rem;
+}
+
+.habiba-line {
+    position: absolute;
+    left: 50%;
+    height: 45rem;
+    border: 2px dashed black;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+.habiba-circle-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    margin: 6rem;
+}
+
+.habiba-circle-large {
+    width: 80px;
+    height: 80px;
+    border: 2px dashed black;
+    background-color: transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.habiba-circle-small {
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.habiba-blue {
+    background-color: var(--h-pr-color);
+}
+
+.habiba-white {
+    background-color: white;
+}
+
+.habiba-left.habiba-headers {
+    margin-right: 100px;
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+.habiba-right.habiba-headers {
+    margin-left: 10px;
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+.habiba-left.habiba-sub {
+    margin-right: 6rem;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: right;
+}
+
+.habiba-right.habiba-sub {
+    margin-left: 12rem;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* RESPONSIVE HABIBA PART 1 */
+@media (max-width: 2430px) {
+    .habiba-circle-wrapper {
+        margin: 5rem;
+    }
+
+    .habiba-text.habiba-text {
+        font-size: 1.9rem;
+    }
+
+    .habiba-text.habiba-headers{
+        font-size: 2.3rem;
+    }
+
+    .habiba-line {
+        height: 40rem;
+    }
+
+    .habiba-left.habiba-sub {
+        margin-left: 2rem;
+    }
+
+    .habiba-right.habiba-sub {
+        margin-left: 8rem;
+    }
+
+    .habiba-iphone img {
+        height: 45rem;
+    }
+}
+
+@media (max-width: 1676px) {
+    .habiba-circle-wrapper {
+        margin: 4.2rem;
+    }
+
+    .habiba-line {
+        height: 35rem;
+    }
+
+    .habiba-text.habiba-sub {
+        font-size: 1.6rem;
+    }
+
+    .habiba-text.habiba-headers {
+        font-size: 2.1rem;
+    }
+
+    .habiba-iphone img {
+        height: 40rem;
+    }
+}
+
+@media (max-width: 1526px) {
+    .habiba-circle-wrapper {
+        margin: 4rem;
+    }
+
+    .habiba-line {
+        height: 32rem;
+    }
+
+    .habiba-circle-large {
+        width: 60px;
+        height: 60px;
+    }
+
+    .habiba-circle-small {
+        width: 40px;
+        height: 40px;
+    }
+
+    .habiba-text.habiba-sub {
+        font-size: 1.4rem;
+    }
+
+    .habiba-text.habiba-headers {
+        font-size: 1.8rem;
+    }
+
+    .habiba-iphone img {
+        height: 36rem;
+    }
+
+    .habiba-right.habiba-sub {
+        margin-left: 6rem;
+    }
+}
+
+@media (max-width: 1375px) {
+    .habiba-text.habiba-sub {
+        font-size: 1.3rem;
+    }
+
+    .habiba-text.habiba-headers {
+        font-size: 1.7rem;
+    }
+
+    .habiba-iphone img {
+        height: 34rem;
+    }
+}
+
+@media (max-width: 1300px) {
+    .habiba-circle-wrapper {
+        margin: 3rem;
+    }
+
+    .habiba-line {
+        height: 25rem;
+    }
+
+    .habiba-iphone img {
+        height: 27rem;
+    }
+
+    .habiba-left.habiba-sub {
+        margin-left: 3rem;
+    }
+
+    .habiba-right.habiba-sub {
+        margin-left: 5rem;
+    }
+}
+
+@media (max-width: 1250px) {
+    .habiba-circle-wrapper {
+        margin: 2.5rem;
+    }
+
+    .habiba-line {
+        height: 22rem;
+    }
+
+    .habiba-circle-large {
+        width: 50px;
+        height: 50px;
+    }
+
+    .habiba-circle-small {
+        width: 30px;
+        height: 30px;
+    }
+
+    .habiba-text.habiba-sub {
+        font-size: 1.2rem;
+    }
+
+    .habiba-text.habiba-headers {
+        font-size: 1.6rem;
+    }
+
+    .habiba-iphone img {
+        height: 23rem;
+    }
+}
+
+@media (max-width: 1130px) {
+    .habiba-text.habiba-sub {
+        font-size: 1rem;
+    }
+
+    .habiba-text.habiba-headers {
+        font-size: 1.4rem;
+    }
+
+    .habiba-line {
+        height: 20rem;
+    }
+
+    .habiba-iphone img {
+        height: 23rem;
+    }
+}
+
+@media (max-width: 1040px) {
+    .habiba-circle-wrapper {
+        margin: 2.3rem;
+    }
+
+    .habiba-line {
+        height: 20rem;
+    }
+
+    .habiba-text.habiba-sub {
+        font-size: 0.95rem;
+    }
+
+    .habiba-text.habiba-headers {
+        font-size: 1.35rem;
+    }
+
+    .habiba-iphone img {
+        height: 22rem;
+    }
+
+    .habiba-left.habiba-sub {
+        margin-right: 3rem;
+    }
+
+}
+
+@media (max-width: 975px) {
+    .habiba-text.habiba-sub {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .habiba-text.habiba-headers {
+        font-size: 1.2rem;
+    }
+
+    .habiba-iphone img {
+        height: 20rem;
+    }
+
+    .habiba-left.habiba-sub {
+        margin-right: 3em;
+    }
+
+    .habiba-right.habiba-sub {
+        margin-left: 5rem;
+    }
+}
+
+@media (max-width: 925px) {
+    .habiba-text.habiba-sub {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .habiba-text.habiba-headers {
+        font-size: 1.1rem;
+    }
+
+    .habiba-iphone img {
+        height: 18rem;
+    }
+
+    .habiba-left.habiba-sub {
+        margin-right: 3em;
+    }
+
+    .habiba-right.habiba-sub {
+        margin-left: 5rem;
+    }
+
+    .habiba-circle-large {
+        width: 45px;
+        height: 45px;
+    }
+
+    .habiba-circle-small {
+        width: 25px;
+        height: 25px;
+    }
+
+    .habiba-line {
+        height: 15rem;
+    }
+}
+
+@media (max-width: 870px) {
+    .habiba-part1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .habiba-iphone1, .habiba-iphone2 {
+        position: static;
+        margin: 0;
+    }
+
+    .habiba-circle-wrapper {
+        margin: 0.2rem;
+    }
+
+    .habiba-line {
+        height: 45rem;
+        top: 4rem;
+    }
+
+    .habiba-iphone img {
+        height: 25rem;
+    }
+
+    .habiba-circle-large {
+        width: 60px;
+        height: 60px;
+    }
+
+    .habiba-circle-small {
+        width: 40px;
+        height: 40px;
+    }
+
+    .habiba-text.habiba-sub {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .habiba-text.habiba-headers {
+        font-size: 1.8rem;
+    }
+
+    .habiba-left.habiba-sub, .habiba-right.habiba-sub {
+        margin: 7rem;
+    }
+
+    .habiba-text.habiba-headers {
+        margin-left: 4rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .habiba-circle-wrapper {
+        margin: 0.5rem;
+    }
+
+    .habiba-text.habiba-sub {
+        font-size: 1rem;
+    }
+
+    .habiba-text.habiba-headers {
+        font-size: 1.3rem;
+    }
+
+    .habiba-iphone img {
+        height: 20rem;
+    }
+
+    .habiba-line {
+        height: 45rem;
+        top: 2rem;
+    }
+}
+
+@media (max-width: 525px) {
+    .habiba-text.habiba-headers {
+        margin-left: 2rem;
+        font-size: 1.2rem;
+    }
+
+    .habiba-text.habiba-sub {
+        font-size: 1rem;
+    }
+
+    .habiba-left.habiba-sub {
+        margin-left: 6rem;
+    }
+
+    .habiba-right.habiba-sub {
+        margin-left: 1rem;
+    }
+
+    .habiba-circle-large {
+        width: 45px;
+        height: 45px;
+    }
+
+    .habiba-circle-small {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media (max-width: 470px) {
+    .habiba-left.habiba-headers {
+        margin-left: 6rem;
+    }
+
+    .habiba-right.habiba-headers {
+        margin-right: 6rem;
+    }
+}
+
+
+/* HABIBA PART 2 */
+.habiba-part2 {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.habiba-words {
+    display: grid;
+    grid-column: 1fr;
+    grid-row: repeat(3, auto);
+    grid-template-areas:
+        "header"
+        "subtext"
+        "checklist";
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.habiba-header1 {
+    font-size: 3rem;
+    grid-area: header;
+}
+
+.habiba-subtext {
+    grid-area: subtext;
+    color: rgba(128, 128, 128, 0.662);
+    font-size: x-large;
+}
+
+.habiba-checklist {
+    grid-area: checklist;
+}
+
+.habiba-item {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.habiba-item svg {
+    height: 24px;
+    width: 24px;
+    margin-right: 0.5rem;
+    fill: var(--h-pr-color);
+}
+
+.habiba-item span {
+    font-size: 1.2rem;
+    color: rgba(128, 128, 128, 0.662);
+}
+
+.habiba-images {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.habiba-image {
+    position: absolute;
+    right: 50px;
+    gap: 2rem;
+}
+
+.habiba-img3 img {
+    height: 27rem;
+    z-index: 0;
+    margin-top: 3rem;
+    margin-right: 8rem;
+}
+
+.habiba-img4 img {
+    height: 32rem;
+    z-index: 1;
+}
+
+/* RESPONSIVE HABIBA PART 2 */
+@media (max-width: 1440px) {
+    .habiba-img3 img {
+        height: 20rem;
+        margin-right: 7rem;
+    }
+
+    .habiba-img4 img {
+        height: 24rem;
+    }
+}
+
+@media (max-width: 1110px) {
+    .habiba-header1 {
+        font-size: 2.5rem;
+    }
+
+    .habiba-img3 img {
+        height: 14rem;
+    }
+
+    .habiba-img4 img {
+        height: 19rem;
+    }
+}
+
+@media (max-width: 880px) {
+    .habiba-image {
+        top: 0;
+        right: 0;
+    }
+
+    .habiba-item span {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 766px) {
+    .habiba-header1 {
+        font-size: 2rem;
+    }
+
+    .habiba-subtext {
+        font-size: large;
+    }
+
+    .habiba-img3 img {
+        height: 11rem;
+    }
+
+    .habiba-img4 img {
+        height: 14rem;
+    }
+}
+
+@media (max-width: 667px) {
+    .habiba-part2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 10%;
+        margin-top: 10rem;
+    }
+
+    .habiba-words {
+        grid-row: 1;
+    }
+
+    .habiba-images {
+        grid-row: 2;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+
+    .habiba-image {
+        position: relative;
+    }
+
+    .habiba-header1 {
+        font-size: 1.5rem;
+    }
+
+    .habiba-subtext {
+        font-size: large;
+    }
+
+    .habiba-img3 img {
+        height: 10rem;
+        margin: 0;
+    }
+
+    .habiba-img4 img {
+        height: 13rem;
+        margin: 0;
+    }
+}
+
+@media (max-width: 585px) {
+    .habiba-part2 {
+        grid-template-rows: auto auto;
+        margin-top: 0;
+    }
+
+    .habiba-header1 {
+        font-size: 1.2rem;
+    }
+
+    .habiba-subtext {
+        font-size: medium;
+    }
+
+    .habiba-item span {
+        font-size: 0.9rem;
+    }
+
+    .habiba-img3 img {
+        height: 8rem;
+    }
+
+    .habiba-img4 img {
+        height: 11rem;
+        margin-right: 9rem;
+    }
+}
+
+@media (max-width: 370px) {
+    .habiba-subtext {
+        font-size: small;
+    }
+
+    .habiba-item span {
+        font-size: 0.7rem;
+    }
+
+    .habiba-img3 img {
+        height: 7rem;
+    }
+
+    .habiba-img4 img {
+        height: 10.5rem;
+        margin-right: 10rem;
+    }
+
+    .habiba-words {
+        padding: 1rem;
+        gap: 1rem;
+    }
+}

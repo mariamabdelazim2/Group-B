@@ -1,0 +1,131 @@
+:root {
+  --primary-color: rgb(52, 96, 232);
+}
+.mariam-mohamed-contact-and-about-grid {
+  
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "contact about";
+  gap: 2rem;
+  margin: 2rem;
+}
+/* @media (max-width:818px){
+    .mariam-mohamed-contact-and-about-grid{
+        grid-template-columns: 50vh;
+
+    }
+} */
+.mariam-mohamed-contact-form {
+  /* background-color: lightcoral; */
+  /*  height: 40vh; */
+  /*     width: 50vh; */
+  display: flex;
+  flex-direction: column;
+  grid-area: contact;
+}
+.mariam-mohamed-about-flex {
+  /*    height: 100%; */
+  background-color: var(--primary-color);
+  border-radius: 15px;
+  padding-top: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex-wrap: wrap;
+  grid-area: about;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .mariam-mohamed-contact-and-about-grid {
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "contact" "about";
+    margin: 0;
+    margin-left: 2%;
+  }
+}
+.mariam-mohamed-contact-form h3 {
+  color: rgb(24, 45, 107);
+  font-size: 3rem;
+}
+.mariam-mohamed-contact-form input,
+.mariam-mohamed-message-input {
+  border: none;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+  padding-bottom: 0.5rem;
+  outline: none;
+  margin-bottom: 2.5rem;
+  font-size: 1.5rem;
+}
+.mariam-mohamed-contact-form input::placeholder,
+.mariam-mohamed-message-input::placeholder {
+  color: rgba(128, 128, 128, 0.7);
+}
+.mariam-mohamed-contact-form p {
+  color: gray;
+  font-size: 1.5rem;
+}
+
+.mariam-mohamed-contact-form button {
+  color: white;
+  background-color: var(--primary-color);
+  border: none;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 25px;
+  transition: 0.15s;
+  font-size: 1.5rem;
+}
+.mariam-mohamed-contact-form button:hover {
+  background-color: rgb(40, 75, 181);
+}
+
+
+
+
+/* about */
+
+
+.mariam-mohamed-about-title {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+/*   word-wrap: break-word; */
+/*   word-break: break-all; */
+}
+.mariam-mohamed-about-contact {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+/*   word-break: break-all; */
+  width: 100%;
+}
+.mariam-mohamed-about-contact img {
+  height: 4rem;
+  margin-right: 1rem;
+}
+.mariam-mohamed-about-contact div {
+  color: white;
+  font-size:1.5rem
+}
+.mariam-about-line {
+  margin-top: 1rem;
+  border: 0.1px solid rgba(255, 255, 255, 0.8);
+}
+.mariam-mohamed-about-footer-flex {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.mariam-mohamed-about-footer-flex img {
+  width: 5rem;
+  margin-top: 2rem;
+  margin-right: 1rem;
+  display: inline-block;
+}

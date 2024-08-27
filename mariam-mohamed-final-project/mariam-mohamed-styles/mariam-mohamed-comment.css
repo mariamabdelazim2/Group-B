@@ -1,0 +1,88 @@
+:root{
+    --primary-color:rgb(52, 96, 232);
+}
+.mariam-mohamed-comment-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 3rem;
+    
+    color: rgb(24, 45, 107);
+}
+.mariam-mohamed-comment-header h2{
+    font-size: 3rem;
+}
+.mySwiper1{
+    margin-bottom: 10%;
+/*     height: 20%; */
+/* height: 30%;*/
+} 
+.swiper-wrapper{
+/*     margin-bottom: 10rem; */
+    margin-left: 1.6rem;
+    height: 100% !important; 
+   /*  gap: 5rem; */
+    margin-bottom:1rem ;
+}
+.swiper-slide{
+    margin-top: 1rem;
+    border-radius: 1rem;
+    transition: 0.5s;
+    margin-bottom: 1rem;
+/*     width: 20% !important; */
+}
+/* .swiper-slide:hover{
+    background-color:var(--primary-color) ;
+    color: white;
+} */
+ .hover-slide:hover{
+    background-color:var(--primary-color) ;
+    color: white;
+ }
+.swiper-slide:hover .mariam-mohamed-comment-title{
+    color:white;
+}
+.swiper-slide:hover .mariam-comment-line{
+    border-color:white;
+}
+.mariam-mohamed-comment{
+    padding: 0.75rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 4px 3px  rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+.mariam-mohamed-comment p{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+.mariam-mohamed-comment-title{
+    color: rgb(52, 96, 232);
+    font-weight: 600;
+    font-size: 2rem;
+}
+.mariam-comment-line{   
+    border: 0.5px solid gray;
+    margin-bottom: 1rem;
+} 
+.mariam-mohamed-comment-profile-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% 1fr ;
+    column-gap: 0.6rem;
+}
+.mariam-mohamed-comment-image{
+    width: 100%;
+    border-radius: 50%;
+}
+.mariam-mohamed-commment-profile-flex{
+    display: flex;
+    flex-direction: column;
+}
+.mariam-mohamed-comment-profile-name{
+    font-weight:500;
+}
+#mariam-mohamed-star{
+    fill: gold;
+}
